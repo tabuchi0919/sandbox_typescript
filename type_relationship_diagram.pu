@@ -1,0 +1,34 @@
+@startuml type_relationship_diagram
+hide circle
+hide empty members
+skinparam linetype ortho
+
+Unknown --|> Any
+Any --|> Void
+Void --|> Undefined
+Any --|> Null
+Any --|> Number
+Any --|> BigInt
+Any --|> Boolean
+Any --|> String
+Any --|> Symbol
+Any --|> Object
+Number --|> NumberEnum
+String --|> StringEnum
+Symbol --|> UniqueSymbol
+"Object" --|> Array
+"Object" --|> Function
+"Object" --|> Constructor
+Undefined --|> Never
+Null --|> Never
+Array --|> Tuple
+NumberEnum --|> Never
+BigInt --|> Never
+Boolean --|> Never
+StringEnum --|> Never
+UniqueSymbol --|> Never
+Tuple --|> Never
+Function --|> Never
+Constructor --|> Never
+
+@enduml
